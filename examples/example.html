@@ -1,0 +1,16 @@
+<html>
+<?python include('header.html') ?>
+<body>
+<table>
+<tr><th>x</th><th>f(x)</th></tr>
+<?py
+def f(x):
+  return x*x
+
+row = '<tr><td>{0}</td><td>{1}</td></tr>'
+for i in xrange(10):
+    print row.format(i, f(i))
+?>
+</table>
+</body>
+</html>
